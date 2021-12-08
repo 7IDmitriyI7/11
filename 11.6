@@ -1,0 +1,43 @@
+using System;
+
+namespace _11._6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите X");
+            int x = Convert.ToInt32(Console.ReadLine());
+            if (x >= 1 && x <= 999)
+            {
+                if ((x % 2) == 0)
+                {
+                    if (x != 0)
+                    {
+                        Console.WriteLine("Четное");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Не четное");
+                }
+                if (x > 99 && x <= 999)
+                {
+                    Console.WriteLine("Трехзначное");
+                }
+                if (x > 9 && x <= 99)
+                {
+                    Console.WriteLine("Двухзначное");
+                }
+                if (x > 0 && x <= 9)
+                {
+                    Console.WriteLine("Однозначное");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Ошибка ввода");
+            }
+        }
+    }
+}
