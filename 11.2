@@ -1,0 +1,23 @@
+using System;
+
+namespace _11._2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите число А");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите число B");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите число C");
+            int c = Convert.ToInt32(Console.ReadLine());
+            int s=0;
+            if ((a < b) && (a < c)) s = b + c;
+            if ((b < a) && (b < c)) s = a + c;
+            if ((c < a) && (c < b)) s = a + b;
+
+            Console.WriteLine("Сумма " + s);
+        }
+    }
+}
